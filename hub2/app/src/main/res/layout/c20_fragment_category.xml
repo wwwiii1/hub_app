@@ -1,0 +1,57 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:weightSum="6"
+    android:background="@android:color/white"
+    tools:context="com.hub.anyspot.views.fragment.C20_CategoryFragment">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btn_category1"
+            android:layout_margin="16dp"
+            android:layout_width="160dp"
+            android:layout_height="150dp"/>
+
+        <Button
+            android:id="@+id/btn_category2"
+            android:layout_margin="16dp"
+            android:layout_width="160dp"
+            android:layout_height="150dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btn_category3"
+            android:layout_margin="16dp"
+            android:layout_width="160dp"
+            android:layout_height="150dp"/>
+
+        <Button
+            android:id="@+id/btn_category4"
+            android:layout_margin="16dp"
+            android:layout_width="160dp"
+            android:layout_height="150dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

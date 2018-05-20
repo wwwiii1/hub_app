@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hub.anyspot.views.activity.C00_MainActivity">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"/>
+
+    <!-- tab menu layout -->
+    <RelativeLayout
+        android:id="@+id/tab_menu_container"
+        android:layout_width="match_parent"
+        android:padding="5dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@android:color/white">
+
+        <Button
+            android:id="@+id/btn_tab1"
+            android:layout_marginRight="23dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@+id/btn_tab2"
+            android:background="@drawable/btn_locate_tab_clicked"/>
+
+        <Button
+            android:id="@+id/btn_tab2"
+            android:layout_marginLeft="23dp"
+            android:layout_marginRight="23dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@+id/center"
+            android:background="@drawable/btn_category_tab"/>
+
+        <Space
+            android:id="@+id/center"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_centerInParent="true"/>
+
+        <Button
+            android:id="@+id/btn_tab3"
+            android:layout_marginLeft="23dp"
+            android:layout_marginRight="23dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/center"
+            android:background="@drawable/btn_fav_tab"/>
+
+        <Button
+            android:id="@+id/btn_tab4"
+            android:layout_marginLeft="23dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/btn_tab3"
+            android:background="@drawable/btn_profile_tab"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
